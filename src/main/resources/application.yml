@@ -1,13 +1,10 @@
 spring:
   application:
     name: container-yard-allocation-service
-
   datasource:
-    url: jdbc:mysql://mysql:3306/container_yard_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://localhost:3307/container_yard_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
     username: root
     password: root123
-
-
   jpa:
     hibernate:
       ddl-auto: validate
@@ -17,12 +14,5 @@ spring:
         format_sql: true
     open-in-view: false
 
-#  kafka:
-#    bootstrap-servers: localhost:9092
-#
-#  jackson:
-#    serialization:
-#      write-dates-as-timestamps: false
-
 server:
-  port: 8080
+  port: 8081
