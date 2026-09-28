@@ -24,6 +24,8 @@ public class Hold {
     // a Container to its active Holds, e.g. "does this container
     // have any active hold?" This is a real domain query, not just
     // a log lookup.
+
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "container_id", nullable = false)
     private Container container;
